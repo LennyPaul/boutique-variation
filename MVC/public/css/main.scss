@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "reset";
+@import "bootstrap";
+
+//GENERAL
+body {
+  font-family: "Inter";
+  font-size: 16px;
+}
+strong {
+  font-weight: 900;
+}
+//PAGE
+@import "error";
+@import "commande";
+@import "panier";
+@import "compte";
+@import "register";
+@import "index";
+@import "admin";
+@import "produits";
+@import "showProduit";
+@import "header";
+@import "footer";
+@import "newsletter";

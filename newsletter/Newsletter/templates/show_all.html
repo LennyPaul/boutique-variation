@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+         <link href="style/reset.css" rel="stylesheet">
+         <link href="style/style.css" rel="stylesheet">
+   </head>
+   <body>
+
+      <h3>Utilisateur inscrit a la newsletter</h3>
+
+      <button><a href="{{ url_for('email') }}"> Envoyer un Mail </a></button>
+      <button><a href="{{ url_for('logout') }}"> Deconnexion </a></button>
+
+      <table>
+         <thead>
+            <tr>
+               <th>Email</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for user in users %}
+               <tr>
+                  <td>{{ user.email }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+
+   </body>
+</html>

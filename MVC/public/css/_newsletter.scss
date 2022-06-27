@@ -1,0 +1,56 @@
+.newsletter {
+  background-image: url("../asset/img/filigram-variation.png"),
+    linear-gradient(
+      90deg,
+      rgba(244, 232, 193, 1) 22%,
+      rgba(154, 156, 99, 1) 100%
+    );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  height: 15em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .textNew {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    gap: 10%;
+    justify-content: center;
+    p {
+      font-weight: 900;
+      font-size: xx-large;
+      font-variant: 900;
+    }
+  }
+  .form {
+    width: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      input {
+        border-radius: 20px;
+        border: none;
+        padding-left: 20px;
+        width: 60%;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+      button {
+        padding: 0%;
+        width: 20%;
+        height: 48px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.register {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  .img {
+    margin-right: 10%;
+    margin-left: 10%;
+    img {
+      border-radius: 20px;
+      border: solid 1px;
+    }
+    width: 30%;
+  }
+  .leftRegister {
+    width: 50%;
+    form {
+      width: 50%;
+      input {
+        margin-bottom: 4%;
+      }
+      button {
+        margin-top: 4%;
+      }
+    }
+  }
+  .bottomR {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    p {
+      font-weight: 200;
+      font-style: oblique;
+    }
+  }
+}
+.title {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}

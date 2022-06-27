@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+    <link href="style/reset.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h2>Envoyer Email</h2>
+      <form action = "{{ request.path }}" method = "POST">
+         <label >Subject</label><br>
+         <input type = "text" name = "subject" placeholder = "Object" /><br>
+         <label >Text</label><br>
+         <textarea name="body" placeholder="Corps du mail"></textarea><br>
+         <button type="submit"> Envoyer mail</button>
+          <p>{{ msg }}</p>
+      </form>
+
+      <button><a href="{{ url_for('show_all') }}"> Liste Utilisateur</a></button>
+      <button><a href="{{ url_for('logout') }}"> Deconnexion </a></button>
+
+</body>
+</html>
